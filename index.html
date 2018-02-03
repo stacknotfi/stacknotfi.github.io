@@ -59,8 +59,27 @@
         <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
   <script>
     var OneSignal = window.OneSignal || [];
+      
+   
+      
     OneSignal.push(["init", {
       appId: "0fc1d641-414a-43b3-98dd-4ed1a45c87e7",
+        
+        
+        // Callback called when tags have finished sending
+            OneSignal.sendTag("key", "value");
+               
+  OneSignal.sendTag("email", "aruncraftsion@gmail.com", function(tagsSent) {
+    // Callback called when tags have finished sending
+  });
+               
+  OneSignal.sendTag("email", "vvigneshcraftsion@gmail.com").then(function(tagsSent) {
+    // Callback called when tags have finished sending
+  }); 
+        // Callback called when tags have finished sending
+                    
+                    
+                    
       autoRegister: false,
        persistNotification: false,
        notifyButton: {
